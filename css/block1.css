@@ -20,7 +20,7 @@
 }
 .page {
   display: flex;
-  max-width: 1510px;
+  max-width: 100vw;
   width: 100%;
   margin-left: auto;
   margin-right: auto;
@@ -30,9 +30,11 @@
 .main-block {
   margin-left: auto;
   margin-right: auto;
-  max-width: 1170px;
+  max-width: 1202px;
   width: 100%;
   color: rgb(255, 255, 255);
+  padding-left: 16px;
+  padding-right: 16px;
 }
 .main-block__countainer {
   height: 100vh;
@@ -68,12 +70,13 @@
   z-index: -3;
 }
 .main-block__title_cursive {
-  margin-top: 6.582%;
+  margin-top: 6.082%;
   font-family: Kaushan Script;
   font-size: 64px;
   font-weight: 400;
   line-height: 92.86px;
   text-align: center;
+  margin-bottom: 0.5%;
 }
 @media (max-width: 1160px) {
   .main-block__title_cursive {
@@ -84,9 +87,9 @@
 }
 .main-block__title_capital-countainer {
   position: relative;
-  right: 70px;
+  right: 122px;
   width: 80%;
-  margin: 0 auto;
+  margin: 5px auto 0;
 }
 .main-block__title_capital {
   font-family: Montserrat;
@@ -96,7 +99,7 @@
   text-align: center;
   text-transform: uppercase;
   text-align: end;
-  letter-spacing: -6px;
+  letter-spacing: -5px;
   word-spacing: -10px;
 }
 @media (max-width: 1160px) {
@@ -107,12 +110,12 @@
 }
 .main-block__separator {
   background-color: rgb(255, 255, 255);
-  margin: 44px auto 72px auto;
+  margin: 39px auto 76px auto;
 }
 .main-block__button {
-  height: 7.83%;
+  height: 7.6%;
   min-height: 54.25px;
-  width: 24.5043%;
+  width: 31.625%;
   min-width: 318px;
   border: 4px solid rgb(255, 255, 255);
   margin-left: auto;
@@ -153,7 +156,7 @@
   left: 0;
   width: 100%;
   display: flex;
-  height: 7.83%;
+  height: 8.692%;
   min-height: 58px;
 }
 .main-block__menu_countainer {
@@ -167,6 +170,7 @@
   position: relative;
   display: flex;
   flex-direction: row;
+  color: rgb(249, 239, 207);
   width: 23.077%;
   min-width: 233px;
   border-top: 4px solid rgb(255, 255, 255);
@@ -189,8 +193,7 @@
   font-family: Raleway;
   font-size: 18px;
   font-weight: 500;
-  line-height: 21.13px;
-  color: rgb(255, 255, 255);
+  line-height: 10.13px;
   text-transform: uppercase;
 }
 .main-block__menu__number {
@@ -198,6 +201,8 @@
   font-size: 36px;
   font-weight: 700;
   line-height: 42.26px;
+}
+.main-block__menu__item:hover {
   color: rgb(255, 255, 255);
 }
 @media (max-width: 1160px) {
