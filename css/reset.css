@@ -8,6 +8,8 @@
 }
 
 a {
+  font-weight: inherit;
+  font-size: inherit;
   text-decoration: none;
 }
 
