@@ -1,0 +1,149 @@
+.page__about {
+  color: rgb(45, 48, 51);
+}
+
+.about {
+  display: flex;
+  max-width: 100vw;
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+  position: relative;
+  background-color: white;
+}
+.about__wrapper {
+  max-height: 1099px;
+  padding-bottom: 93.935%;
+}
+.about__info {
+  height: 63.603%;
+  margin: 3.358974% auto 0;
+}
+.about__title {
+  margin: 0 auto 2.051%;
+}
+.title__cursive {
+  display: flex;
+  height: 80px;
+  font-family: Kaushan Script;
+  font-size: 30px;
+  font-weight: 400;
+  line-height: 43.53px;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+}
+.title__capital {
+  display: flex;
+  height: 81px;
+  font-family: Raleway;
+  font-size: 36px;
+  font-weight: 900;
+  line-height: 42.26px;
+  text-align: center;
+  text-transform: uppercase;
+  justify-content: center;
+  align-items: center;
+}
+.title__separator {
+  border-bottom: 4px solid rgb(243, 130, 129);
+}
+.title__description {
+  display: flex;
+  height: 118px;
+  font-family: Raleway;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 21.13px;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+}
+.title__description_about {
+  margin-bottom: 4.95726%;
+}
+
+.galery {
+  display: flex;
+  flex-direction: row;
+  gap: 2.5641%;
+}
+.galery__item {
+  display: flex;
+  width: 31.6239%;
+  position: relative;
+}
+.galery__image {
+  display: flex;
+  width: 100%;
+  height: 0;
+  padding-bottom: 91.351%;
+  position: relative;
+}
+.galery__image img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+.galery__hover {
+  display: none;
+  flex-direction: column;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  transition: 1s ease;
+}
+.galery__hovered-image {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+.galery__link {
+  z-index: 2;
+}
+.galery__link_text {
+  font-family: Raleway;
+  font-size: 24px;
+  font-weight: 500;
+  line-height: 28.18px;
+  text-align: center;
+  color: rgb(255, 255, 255);
+}
+.galery__link_icon {
+  margin: 34.864864% auto 0;
+  display: flex;
+  width: 10.8108%;
+  position: relative;
+}
+
+.icon-img {
+  display: flex;
+  width: 100%;
+  height: 0;
+  padding-bottom: 100%;
+  position: relative;
+}
+
+.icon-img img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+@media (min-width: 901px) {
+  .galery__image:hover + .galery__hover {
+    display: flex;
+  }
+  .galery__hover:hover {
+    transform: translate(-4.324%, -4.7337%);
+    display: flex;
+  }
+}
