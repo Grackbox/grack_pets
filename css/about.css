@@ -7,7 +7,6 @@
   position: relative;
   color: rgb(45, 48, 51);
   background-color: white;
-  z-index: -3;
 }
 .about__wrapper {
   max-height: 1099px;
@@ -15,7 +14,7 @@
 }
 .about__info {
   height: 63.603%;
-  margin: 3.358974% auto 9.316239%;
+  margin: 3.589% auto 9.316239%;
 }
 .about__title {
   margin: 0 auto 2.051%;
@@ -49,6 +48,10 @@
     height: -moz-fit-content;
     height: fit-content;
   }
+}
+
+.info {
+  width: 100%;
 }
 
 .title__cursive {
@@ -140,10 +143,10 @@
   width: 100%;
 }
 .galery__item {
-  flex-grow: 1;
   display: flex;
   width: 31.6239%;
   position: relative;
+  flex-grow: 1;
 }
 .galery__image {
   display: flex;
@@ -193,6 +196,7 @@
   line-height: 28.18px;
   text-align: center;
   color: rgb(255, 255, 255);
+  text-transform: uppercase;
 }
 .galery__link_icon {
   margin: 34.864864% auto 8.8757%;
@@ -201,7 +205,7 @@
   position: relative;
 }
 
-@media (min-width: 451px) and (max-width: 662px) {
+@media (min-width: 465px) and (max-width: 662px) {
   .galery__item:last-child .galery__image {
     padding-bottom: 50%;
   }
@@ -212,7 +216,7 @@
     min-width: 200px;
   }
 }
-@media (max-width: 450px) {
+@media (max-width: 464px) {
   .galery {
     gap: 16px;
     flex-direction: column;
@@ -231,6 +235,8 @@
 }
 
 .icon-img img {
+  -o-object-fit: contain;
+     object-fit: contain;
   position: absolute;
   top: 0;
   left: 0;
@@ -247,6 +253,7 @@
   width: 100%;
 }
 .futures__item {
+  z-index: 1;
   display: flex;
   flex-direction: column;
   flex-grow: 1;
@@ -298,7 +305,6 @@
   background: rgb(149, 225, 211);
   width: 100vw;
   height: 100%;
-  z-index: -2;
   border-top: 1px solid rgb(255, 255, 255);
   border-bottom: 1px solid rgb(255, 255, 255);
 }
