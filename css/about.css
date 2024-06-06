@@ -54,6 +54,11 @@
   width: 100%;
 }
 
+.title {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
 .title__cursive {
   display: flex;
   height: 80px;
