@@ -1,0 +1,313 @@
+.creativity {
+  display: flex;
+  max-width: 100vw;
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+  position: relative;
+  color: rgb(45, 48, 51);
+  background-color: white;
+}
+.creativity__wrapper {
+  min-height: -moz-fit-content;
+  min-height: fit-content;
+  padding-bottom: 0px;
+  max-height: -moz-fit-content;
+  max-height: fit-content;
+}
+.creativity__frame {
+  display: flex;
+  position: relative;
+}
+.creativity__card-indexer {
+  margin-bottom: 9.7435%;
+}
+.creativity__quotes {
+  padding: 3.5897% 1.1%;
+}
+
+.card-indexer {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  gap: 2.564%;
+  height: -moz-fit-content;
+  height: fit-content;
+}
+.card-indexer__image-box {
+  display: flex;
+  width: 48%;
+  position: relative;
+  flex-grow: 1;
+}
+.card-indexer__items {
+  display: flex;
+  width: 48%;
+  flex-direction: column;
+  flex-grow: 1;
+}
+.card-indexer__item {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+.card-indexer__item:not(:last-child) {
+  margin-bottom: 5.263%;
+}
+.card-indexer__title {
+  flex-grow: 1;
+  flex-direction: row;
+  width: 100%;
+  height: 90px;
+  position: relative;
+  display: flex;
+  border: 1px, solid, rgb(198, 203, 205);
+  align-items: center;
+  padding: 0 2.631%;
+  -moz-column-gap: 7.017%;
+       column-gap: 7.017%;
+}
+.card-indexer__title span {
+  flex-grow: 1;
+  font-family: Raleway;
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 28.18px;
+  text-align: left;
+  text-transform: uppercase;
+}
+.card-indexer__checkbox {
+  position: absolute;
+  height: 0;
+  width: 0;
+  opacity: 0;
+}
+.card-indexer__title-icon {
+  cursor: pointer;
+  width: 6.7747%;
+  min-width: 30px;
+}
+.card-indexer__arrow-icon {
+  cursor: pointer;
+  width: 6.7747%;
+  min-width: 30px;
+  transform: rotatex(180deg);
+  transition: 0.5s ease;
+}
+.card-indexer__description {
+  height: 0;
+  overflow: hidden;
+  border-width: 0px 0px 0px 0px;
+  border-color: rgb(198, 203, 205);
+  border-style: solid;
+  transition: height 0.5s ease, border 0.5s ease;
+}
+.card-indexer__description div {
+  padding: 3.684% 0;
+  height: 100%;
+}
+.card-indexer__description-text {
+  height: 100%;
+  overflow-y: scroll;
+  font-family: Raleway;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 16.44px;
+  text-align: left;
+  padding: 0 9.631% 0 3.684%;
+  margin-right: 3%;
+}
+.card-indexer__description-text::-webkit-scrollbar {
+  width: 6px;
+}
+.card-indexer__description-text::-webkit-scrollbar-track {
+  background: rgb(245, 245, 245);
+}
+.card-indexer__description-text::-webkit-scrollbar-thumb {
+  height: 50px;
+  background: rgb(149, 225, 211);
+}
+.card-indexer__title-icon-frame {
+  display: flex;
+  width: 100%;
+  height: 0;
+  padding-bottom: 100%;
+  position: relative;
+}
+.card-indexer__title-icon-frame img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  -o-object-fit: contain;
+     object-fit: contain;
+}
+.card-indexer__arrow-icon-frame {
+  display: flex;
+  width: 100%;
+  height: 0;
+  padding-bottom: 100%;
+  position: relative;
+}
+.card-indexer__arrow-icon-frame img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  -o-object-fit: contain;
+     object-fit: contain;
+}
+
+.image-box-frame {
+  display: flex;
+  width: 100%;
+  height: 0;
+  padding-bottom: 84.737%;
+  position: relative;
+}
+
+.image-box-frame img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.card-indexer__title:has(.card-indexer__checkbox:checked) + .card-indexer__description {
+  height: 138px;
+  border-width: 0 1px 1px 1px;
+}
+
+.card-indexer__title:has(.card-indexer__checkbox:checked) > .card-indexer__arrow-icon {
+  transform: rotatex(0deg);
+}
+
+.quotes {
+  width: 100%;
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  overflow-x: scroll;
+  scroll-snap-type: x mandatory;
+}
+.quotes::-webkit-scrollbar {
+  display: none;
+}
+.quotes__background {
+  position: relative;
+  left: 50%;
+  transform: translateX(-50%);
+  justify-content: center;
+  width: 100vw;
+  height: 100%;
+}
+.quotes__background_creativity {
+  background: rgb(248, 248, 248);
+}
+.quotes__item {
+  min-width: 100%;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  scroll-snap-align: center;
+}
+.quotes__item_creativity:not(:last-child) {
+  margin-right: 2.25%;
+}
+.quotes__arrow-icon {
+  align-self: center;
+  display: flex;
+  transform: rotate(-90deg);
+  cursor: pointer;
+  width: 3.5897%;
+  min-width: 30px;
+}
+.quotes__arrow-icon:last-child {
+  transform: rotate(90deg);
+}
+.quotes__arrow-icon-frame {
+  display: flex;
+  width: 100%;
+  height: 0;
+  padding-bottom: 100%;
+  position: relative;
+}
+.quotes__arrow-icon-frame img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  -o-object-fit: contain;
+     object-fit: contain;
+}
+.quotes__title-icon-border {
+  display: flex;
+  flex-basis: 170px;
+  height: -moz-min-content;
+  height: min-content;
+  min-width: 100px;
+  border: 2px solid rgb(149, 225, 211);
+  margin-right: 2.564%;
+  margin-left: 3.925%;
+}
+.quotes__title-icon {
+  width: 41.89%;
+  display: flex;
+  margin: 29.41%;
+}
+.quotes__title-icon-frame {
+  display: flex;
+  width: 100%;
+  height: 0;
+  padding-bottom: 100%;
+  position: relative;
+}
+.quotes__title-icon-frame img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  -o-object-fit: contain;
+     object-fit: contain;
+}
+.quotes__description {
+  display: flex;
+  flex-basis: 770px;
+  flex-wrap: wrap;
+}
+.quotes__description_creativity {
+  margin-right: 4.1025%;
+}
+.quotes__text {
+  font-family: Raleway;
+  font-size: 24px;
+  font-style: italic;
+  font-weight: 500;
+  line-height: 28.18px;
+  text-align: left;
+  color: rgb(169, 175, 177);
+}
+.quotes__separator {
+  display: inline-flex;
+  margin: 0;
+  align-self: center;
+  width: 8.84%;
+  border-bottom: solid 4px rgb(243, 130, 129);
+  margin-right: 6.44%;
+}
+.quotes__signature {
+  align-self: center;
+  font-family: Kaushan Script;
+  font-size: 30px;
+  font-weight: 400;
+  line-height: 43.53px;
+  text-align: left;
+}
