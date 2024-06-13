@@ -28,6 +28,13 @@
   display: flex;
   gap: 2.5641%;
 }
+@media (max-width: 900px) {
+  .media__follow {
+    flex-direction: column;
+    align-items: center;
+    gap: 5vh;
+  }
+}
 .media__about {
   flex-basis: 370px;
   max-width: 370px;
@@ -52,6 +59,25 @@
   line-height: 21.13px;
   text-align: left;
 }
+@media (max-width: 900px) {
+  .media__about > h2 {
+    font-size: 32px;
+  }
+  .media__about > p {
+    line-height: 21.13px;
+    font-size: 18px;
+  }
+}
+@media (max-width: 900px) {
+  .media__about > h2 {
+    font-size: 28px;
+  }
+  .media__about > p {
+    line-height: 16.44px;
+    font-size: 14px;
+    text-align: center;
+  }
+}
 .media__followers {
   display: flex;
   color: rgb(45, 48, 51);
@@ -64,6 +90,11 @@
   font-weight: 400;
   line-height: 30px;
   text-align: left;
+}
+@media (max-width: 1200px) {
+  .media__followers p {
+    font-size: 14px;
+  }
 }
 .media__follow-us {
   margin-top: 5%;
@@ -100,10 +131,10 @@
   margin-right: 4%;
 }
 .media__social:visited .media__visided {
-  display: block;
+  display: block !important;
 }
 .media__social:visited .__not-visided {
-  display: none;
+  display: none !important;
 }
 .media__social:hover .media__visided {
   display: block;
@@ -140,6 +171,20 @@
   display: flex;
   flex-direction: row;
 }
+@media (max-width: 900px) {
+  .media__form {
+    max-width: 300px;
+    flex-direction: column;
+    row-gap: 2.5vh;
+    align-self: center;
+    width: 100%;
+    margin-top: 2.5vh;
+  }
+}
+.media__blogs {
+  flex-basis: 470px;
+  min-width: 250px;
+}
 .media__instagram {
   flex-basis: 270px;
   max-width: 270px;
@@ -154,6 +199,11 @@
   line-height: 28.18px;
   text-align: left;
 }
+@media (max-width: 1200px) {
+  .media__instagram h2 {
+    font-size: 18px;
+  }
+}
 .media__img-box {
   display: grid;
   grid-template: 1fr 1fr 1fr/1fr 1fr 1fr;
@@ -161,7 +211,6 @@
   margin-bottom: 30px;
 }
 .media__instagram-img {
-  flex-basis: 90px;
   cursor: pointer;
   min-width: 60px;
   transition: 0.4s ease;
@@ -196,6 +245,28 @@
   text-decoration: underline;
   text-transform: uppercase;
 }
+@media (max-width: 1200px) {
+  .media__photos {
+    font-size: 12px;
+  }
+}
+@media (max-width: 900px) {
+  .media__about {
+    flex-basis: auto;
+    max-width: 500px;
+    width: 100%;
+  }
+  .media__blogs {
+    flex-basis: auto;
+    max-width: 500px;
+    width: 100%;
+  }
+  .media__instagram {
+    flex-basis: auto;
+    max-width: 500px;
+    width: 100%;
+  }
+}
 
 .Raleway-big {
   text-transform: none;
@@ -208,7 +279,7 @@
 }
 
 .Raleway-small {
-  text-transform: none;
+  text-transform: uppercase;
   font-family: Raleway;
   font-style: normal;
   font-size: 18px;
@@ -217,11 +288,17 @@
   text-align: left;
 }
 
+@media (max-width: 1200px) {
+  .Raleway-small {
+    font-size: 14px;
+  }
+  .Raleway-big {
+    font-size: 24px;
+  }
+}
 .blogs {
   display: flex;
   flex-direction: column;
-  flex-basis: 470px;
-  min-width: 250px;
 }
 .blogs h2 {
   text-transform: uppercase;
@@ -296,6 +373,18 @@
   line-height: 15.26px;
   text-align: left;
 }
+@media (max-width: 1200px) {
+  .blogs h2 {
+    font-size: 18px;
+  }
+  .blogs__description {
+    font-size: 14px;
+    line-height: 16.44px;
+  }
+  .blogs__date {
+    font-size: 12px;
+  }
+}
 
 .copirate {
   display: flex;
@@ -349,4 +438,25 @@
   background: rgb(92, 149, 138);
   border: solid 5px rgb(255, 255, 255);
   transition: 0.3s ease-in;
+}
+
+@media (max-width: 1200px) {
+  #emailAddress {
+    height: 37px;
+    font-size: 14px;
+  }
+  .subscribe {
+    height: 37px;
+    font-size: 14px;
+  }
+}
+@media (max-width: 900px) {
+  #emailAddress {
+    flex-basis: auto;
+    width: 100%;
+  }
+  .subscribe {
+    flex-basis: auto;
+    width: 100%;
+  }
 }
