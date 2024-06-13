@@ -34,6 +34,16 @@
     padding: 3.5897% 1.1%;
   }
 }
+.title__description_creativity {
+  margin-bottom: 4.95726%;
+  margin-top: 4.95726%;
+}
+@media (max-width: 900px) {
+  .title__description_creativity {
+    margin-bottom: 5vh;
+    margin-top: 3vh;
+  }
+}
 
 .card-indexer {
   width: 100%;
@@ -72,7 +82,7 @@
     height: 90px;
     position: relative;
     display: flex;
-    border: 1px, solid, rgba(198, 203, 205, 1);
+    border: 1px solid rgba(198, 203, 205, 1);
     align-items: center;
     padding: 0 2.631%;
     column-gap: 7.017%;
@@ -193,7 +203,7 @@
   border-width: 0 1px 1px 1px;
 }
 .card-indexer__title:has(.card-indexer__checkbox:checked)
-  > .card-indexer__arrow-icon {
+  .card-indexer__arrow-icon {
   transform: rotatex(0deg);
 }
 .quotes {

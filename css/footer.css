@@ -1,0 +1,352 @@
+.footer {
+  display: flex;
+  max-width: 100vw;
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+  position: relative;
+  color: rgb(45, 48, 51);
+  background-color: white;
+}
+.footer__wrapper {
+  min-height: -moz-fit-content;
+  min-height: fit-content;
+  padding-bottom: 0px;
+  max-height: -moz-fit-content;
+  max-height: fit-content;
+}
+.footer__frame {
+  display: flex;
+  position: relative;
+}
+.media {
+  display: flex;
+  margin: 3.5897% 0;
+}
+.media__follow {
+  width: 100%;
+  display: flex;
+  gap: 2.5641%;
+}
+.media__about {
+  flex-basis: 370px;
+  max-width: 370px;
+  min-width: 250px;
+  display: flex;
+  flex-direction: column;
+}
+.media__about > h2 {
+  color: rgb(198, 203, 205);
+  font-family: Raleway;
+  font-size: 36px;
+  font-weight: 900;
+  line-height: 42.26px;
+  text-align: left;
+}
+.media__about > p {
+  margin: 10% 0;
+  color: rgb(198, 203, 205);
+  font-family: Raleway;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 21.13px;
+  text-align: left;
+}
+.media__followers {
+  display: flex;
+  color: rgb(45, 48, 51);
+}
+.media__followers p {
+  text-transform: uppercase;
+  font-family: Raleway;
+  font-size: 18px;
+  font-style: italic;
+  font-weight: 400;
+  line-height: 30px;
+  text-align: left;
+}
+.media__follow-us {
+  margin-top: 5%;
+  margin-bottom: 5%;
+  border-top: 1px solid rgb(198, 203, 205);
+  display: flex;
+  font-family: Raleway;
+  font-size: 13px;
+  font-style: italic;
+  font-weight: 400;
+  line-height: 15.26px;
+  text-align: left;
+  justify-content: space-between;
+  color: rgb(198, 203, 205);
+}
+.media__follow-us p {
+  justify-self: center;
+  align-self: center;
+  margin-right: 10%;
+}
+.media__social-list {
+  margin-top: 3%;
+  display: flex;
+  flex-grow: 1;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+.media__social {
+  display: flex;
+  flex-basis: 24px;
+}
+.media__social:not(:last-child) {
+  margin-right: 4%;
+}
+.media__social:visited .media__visided {
+  display: block;
+}
+.media__social:visited .__not-visided {
+  display: none;
+}
+.media__social:hover .media__visided {
+  display: block;
+}
+.media__social:hover .__not-visided {
+  display: none;
+}
+.media__icon {
+  width: 100%;
+  cursor: pointer;
+  min-width: 16px;
+}
+.media__icon-frame {
+  display: flex;
+  width: 100%;
+  height: 0;
+  padding-bottom: 100%;
+  position: relative;
+}
+.media__icon-frame img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  -o-object-fit: contain;
+     object-fit: contain;
+}
+.media__visided {
+  display: none;
+}
+.media__form {
+  margin-top: auto;
+  display: flex;
+  flex-direction: row;
+}
+.media__instagram {
+  flex-basis: 270px;
+  max-width: 270px;
+  min-width: 150px;
+}
+.media__instagram h2 {
+  text-transform: uppercase;
+  margin-bottom: 30px;
+  font-family: Raleway;
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 28.18px;
+  text-align: left;
+}
+.media__img-box {
+  display: grid;
+  grid-template: 1fr 1fr 1fr/1fr 1fr 1fr;
+  gap: 2px;
+  margin-bottom: 30px;
+}
+.media__instagram-img {
+  flex-basis: 90px;
+  cursor: pointer;
+  min-width: 60px;
+  transition: 0.4s ease;
+}
+.media__instagram-img:hover {
+  transform: scale(1.4);
+  z-index: 4;
+  box-shadow: 0px 0px 10px black;
+}
+.media__instagram-img-frame {
+  display: flex;
+  width: 100%;
+  height: 0;
+  padding-bottom: 97.778%;
+  position: relative;
+}
+.media__instagram-img-frame img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.media__photos {
+  font-family: Raleway;
+  font-size: 13px;
+  font-weight: 400;
+  line-height: 15.26px;
+  text-align: left;
+  text-decoration: underline;
+  text-transform: uppercase;
+}
+
+.Raleway-big {
+  text-transform: none;
+  font-family: Raleway;
+  font-style: normal;
+  font-size: 36px;
+  font-weight: 700;
+  line-height: 30px;
+  text-align: left;
+}
+
+.Raleway-small {
+  text-transform: none;
+  font-family: Raleway;
+  font-style: normal;
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 30px;
+  text-align: left;
+}
+
+.blogs {
+  display: flex;
+  flex-direction: column;
+  flex-basis: 470px;
+  min-width: 250px;
+}
+.blogs h2 {
+  text-transform: uppercase;
+  font-family: Raleway;
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 28.18px;
+  text-align: left;
+  margin-bottom: 30px;
+}
+.blogs__item {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+}
+.blogs__item:not(:last-child) {
+  margin-bottom: 6.382%;
+}
+.blogs__link {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+}
+.blogs__link:hover > .blogs__image {
+  transform: scale(1.2);
+  z-index: 4;
+  box-shadow: 0px 0px 5px black;
+}
+.blogs__image {
+  display: flex;
+  flex-basis: 170px;
+  cursor: pointer;
+  min-width: 83px;
+  margin-right: 6.382%;
+  transition: 0.5s ease;
+}
+.blogs__image-frame {
+  display: flex;
+  width: 100%;
+  height: 0;
+  padding-bottom: 61.7647%;
+  position: relative;
+}
+.blogs__image-frame img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.blogs__description {
+  flex-basis: 270px;
+  text-transform: uppercase;
+  justify-content: space-between;
+  display: flex;
+  flex-direction: column;
+  font-family: Raleway;
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 21.13px;
+  text-align: left;
+  color: rgb(45, 48, 51);
+  padding-bottom: 5px;
+}
+.blogs__date {
+  text-transform: none;
+  font-family: Raleway;
+  font-size: 13px;
+  font-weight: 400;
+  line-height: 15.26px;
+  text-align: left;
+}
+
+.copirate {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-top: 1px solid rgb(198, 203, 205);
+  font-family: Raleway;
+  font-size: 13px;
+  font-weight: 700;
+  line-height: 15.26px;
+  text-align: center;
+  color: rgb(45, 48, 51);
+  height: 50px;
+}
+
+#emailAddress {
+  height: 55px;
+  flex-basis: 234px;
+  border: 1px solid rgb(198, 203, 205);
+  font-family: Raleway;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 21.13px;
+  text-align: center;
+}
+#emailAddress::-moz-placeholder {
+  color: rgb(198, 203, 205);
+}
+#emailAddress::placeholder {
+  color: rgb(198, 203, 205);
+}
+
+.subscribe {
+  cursor: pointer;
+  height: 55px;
+  flex-basis: 134px;
+  color: rgb(255, 255, 255);
+  background: rgb(149, 225, 211);
+  text-transform: uppercase;
+  font-family: Raleway;
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 21.13px;
+  text-align: center;
+  transition: 0.3s ease-in;
+}
+.subscribe:hover {
+  background: rgb(135, 210, 196);
+}
+.subscribe:active {
+  background: rgb(92, 149, 138);
+  border: solid 5px rgb(255, 255, 255);
+  transition: 0.3s ease-in;
+}
